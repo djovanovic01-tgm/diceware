@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Generate secure passphrases with the Diceware method">
+	<meta name="author" content="Michael Henriksen">
+	<title>Diceware Passphrase Generator</title>
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="application.css">
+</head>
+
+<body id ="1" onclick="seed()">
+<nav style="text-align:center;background-color:black;color:white;" class="navbar">
+	<span class="navbar-brand mb-0 h1">Diceware Passphrase Generator</span>
+</nav>
+<h6 id="altpw">Alternative Passphrase</h6>
+<div id="randompw"></div>
+	<div class="container">
+		<div id="seeder" class="seeder">
+			<p>Klicken Sie auf Ihren Bildschirm, um den Zufallszahlengenerator zu starten</p>
+			<div class="progress">
+  			<div class="progress-bar progress-bar-striped progress-bar-animated bg-success" id="seed_progress" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+  				0%
+  			</div>
+			</div>
+		</div>
+
+		<div id="passphrase_container">
+			<div id="passphrase" class="passphrase"></div>
+		</div>
+
+	</div>
+<div class="btn-group btn-group-justified fixed-bottom" id="new_passphrase">
+	<p style="margin:0px 5px 10px 5px;">Wie viele Wörter brauchen Sie?</p>
+
+	<button type="button" class="btn" onclick="newpassphrase('5')">5</button>
+	<button type="button" class="btn" onclick="newpassphrase('6')">6</button>
+	<button type="button" class="btn" onclick="newpassphrase('7')">7</button>
+	<button type="button" class="btn" onclick="newpassphrase('8')">8</button>
+</div>
+
+  <noscript>
+  	<div class="noscript">
+  		<h1>Sorry, this site requires Javascript.</h1>
+  		<div style="font-size: 56px;">&#9856; &#9857; &#9858; &#9859; &#9860; &#9861;</div>
+  	</div>
+ 	</noscript>
+
+	<script src="//code.jquery.com/jquery-2.0.3.min.js" type="text/javascript"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="seedrandom.js" type="text/javascript"></script>
+	<script src="application.js" type="text/javascript"></script>
+	<script src="dictionary.js" type="text/javascript"></script>
+</body>
+</html>

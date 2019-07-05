@@ -1,0 +1,145 @@
+html,body, .modal-content {
+	background-color: white;
+	color: black;
+	margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+a {
+	color: rgb(124, 118, 184);
+}
+
+code {
+	background-color: inherit;
+}
+
+.btn {
+	background-color: black;
+	border: 1px solid white;
+	color: white;
+	height:50px;
+	font-size:130%;
+	width:24%;
+}
+
+.btn:hover {
+	border-color: green;
+	color: white;
+}
+
+.progress {
+	background-color: white;
+	border:0.2px solid black;
+}
+.seeder {
+	text-align: center;
+	color: black;
+}
+
+.passphrase {
+	margin-top: 100px;
+	text-align: center;
+	display:block;
+    width:100%;
+    height:400px;
+    overflow:scroll;
+}
+
+.passphrase .word {
+	color: black;
+	font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+	font-size: 28px;
+	text-align: center;
+	display: inline-block;
+	width: 120px;
+	margin-right: 10px;
+}
+
+.passphrase .word .word-color {
+	display: block;
+	height: 5px;
+	background-color: red;
+	margin-top: 10px;
+	border-radius: 3px;
+}
+
+.passphrase .word .word-number {
+	font-size: 11px;
+	color: rgb(122, 122, 138);
+}
+
+.passphrase .word .word-dice {
+	display: block;
+	font-size: 21px;
+	color: rgb(122, 122, 138);
+}
+
+#passphrase_container {
+	display: none;
+}
+
+#new_passphrase {
+	text-align: center;
+	display: none;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+.modal-content button:hover {
+	color: #fff;
+	background-color: inherit;
+}
+
+.modal-content button.close {
+	border: none;
+}
+
+.modal-header, .modal-footer, hr {
+	border-color: rgb(121, 123, 137);
+}
+
+.modal-body {
+	color: rgb(121, 123, 137);
+}
+
+.noscript {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: block;
+	z-index: 9999;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(27, 27, 36);
+	text-align: center;
+	color: rgb(122, 122, 138);
+	padding-top: 20%;
+}
+.container{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+#randompw{
+    opacity:0;
+    border:1px solid black;
+	color: black;
+	font-family: Consolas,Menlo,Monaco,Lucida Console,Liberation Mono,DejaVu Sans Mono,Bitstream Vera Sans Mono,Courier New,monospace,serif;
+	font-size: 18px;
+	text-align: center;
+	display: inline-block;
+	margin-right: 7%;
+	margin-left: 7%;
+	width: 86%;
+}
+#altpw{
+    opacity:0;
+    text-align:center;
+    margin-top:15px;
+}
+
+
